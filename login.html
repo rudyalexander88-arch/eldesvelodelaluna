@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Iniciar Sesión | El Desvelo de la Luna | R.DeLeon</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">El Desvelo de la Luna</div>
+
+    <nav>
+
+        <ul>
+
+            <li><a href="index.html">Inicio</a></li>
+
+            <li><a href="registro.html">Registrarse</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<section class="login-container">
+
+    <div class="login-imagen">
+
+        <img src="img/logo.png"  alt="Poeta" width="250" height="250">
+
+    </div>
+
+    <div class="login-card">
+
+        <h1>Bienvenido</h1>
+
+        <p>Inicia sesión para continuar.</p>
+		<br>
+        <form id="loginForm">
+
+            <input
+                type="text"
+                id="usuario"
+                placeholder="Usuario o correo"
+                required>
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Contraseña"
+                required>
+
+            <br>
+			<br>
+			<label class="recordar">
+
+                <input type="checkbox" id="recordarme">
+
+                Recordarme
+
+            </label>
+			
+            <button type="submit">
+
+                Iniciar sesión
+
+            </button>
+
+        </form>
+
+        <p class="registro-link">
+
+            ¿No tienes una cuenta?
+
+            <a href="registro.html">
+
+                Regístrate aquí
+
+            </a>
+
+        </p>
+
+        <div id="mensajeLogin"></div>
+
+    </div>
+
+</section>
+
+<script src="js/login.js"></script>
+
+</body>
+
+</html>

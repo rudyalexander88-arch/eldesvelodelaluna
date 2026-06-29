@@ -1,16 +1,11 @@
-/*=========================================
-        CONFIGURACIÓN
-=========================================*/
+/*CONFIGURACIÓN*/
 
-// Más adelante solo cambiaremos esta línea
+// Tengo que cambiar esta linea para agregar la api
 
 const API =
 "https://script.google.com/macros/s/AKfycbz1Hqn-oiknBaxO2XJZlVzhYYOEPz5wkSYF0h_mP1w9LiXVui5FOHasWwCG_w2f1eeq/exec";
 
-
-/*=========================================
-        DATOS TEMPORALES
-=========================================*/
+/*DATOS TEMPORALES*/
 
 let poemas = [
 
@@ -76,10 +71,7 @@ descripcion:"Quisiera ser la gota que nace con la lluvia..."
 
 ];
 
-
-/*=========================================
-            CARGAR MENU
-=========================================*/
+/*CARGAR MENU*/
 
 function cargarMenu(){
 
@@ -108,9 +100,7 @@ ${poema.titulo}
 }
 
 
-/*=========================================
-        BANNER PRINCIPAL
-=========================================*/
+/*BANNER PRINCIPAL*/
 
 function cargarBanner(){
 
@@ -157,9 +147,7 @@ Leer poesía →
 }
 
 
-/*=========================================
-        ULTIMAS
-=========================================*/
+/*ULTIMAS*/
 
 function cargarUltimas(){
 
@@ -206,9 +194,7 @@ Leer →
 }
 
 
-/*=========================================
-        INTRO
-=========================================*/
+/*INTRO*/
 
 window.addEventListener("load",()=>{
 
@@ -225,9 +211,7 @@ intro.style.visibility="hidden";
 });
 
 
-/*=========================================
-        BOTON HERO
-=========================================*/
+/*BOTON HERO*/
 
 document
 .getElementById("explorar")
@@ -244,9 +228,7 @@ behavior:"smooth"
 });
 
 
-/*=========================================
-        HEADER
-=========================================*/
+/*HEADER*/
 
 window.addEventListener("scroll",()=>{
 
@@ -267,9 +249,7 @@ header.style.background="rgba(0,0,0,.45)";
 });
 
 
-/*=========================================
-        REVELAR SECCIONES
-=========================================*/
+/*REVELAR SECCIONES*/
 
 const observer=new IntersectionObserver(entries=>{
 
@@ -293,9 +273,7 @@ observer.observe(sec);
 });
 
 
-/*=========================================
-        INICIAR
-=========================================*/
+/* INICIAR */
 
 cargarMenu();
 
@@ -303,9 +281,7 @@ cargarBanner();
 
 cargarUltimas();
 
-/*=========================
-        MENU
-==========================*/
+/* MENU */
 
 document.addEventListener("DOMContentLoaded",()=>{
 
