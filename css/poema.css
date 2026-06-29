@@ -1,5 +1,70 @@
 /* VISOR DEL POEMA*/
 
+/*BOTONES FLOTANTES*/
+
+.btn-flecha{
+
+    position:fixed;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:60px;
+
+    height:60px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(15,15,15,.75);
+
+    color:#C9A96A;
+
+    font-size:34px;
+
+    cursor:pointer;
+
+    backdrop-filter:blur(10px);
+
+    transition:.3s;
+
+    z-index:900;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.35);
+
+}
+
+.btn-flecha:hover{
+
+    background:#C9A96A;
+
+    color:#111;
+
+    transform:translateY(-50%) scale(1.08);
+
+}
+
+.izquierda{
+
+    left:30px;
+
+}
+
+.derecha{
+
+    right:30px;
+
+}
+
+.btn-flecha:disabled{
+
+    opacity:.25;
+
+    cursor:default;
+
+}
 .visor{
 
     min-height:100vh;

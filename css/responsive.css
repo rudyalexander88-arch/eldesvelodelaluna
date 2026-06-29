@@ -77,6 +77,31 @@ section{
 
 }
 
+@media(max-width:768px){
+
+.btn-flecha{
+
+    width:48px;
+
+    height:48px;
+
+    font-size:26px;
+
+}
+
+.izquierda{
+
+    left:10px;
+
+}
+
+.derecha{
+
+    right:10px;
+
+}
+
+}
 
 /*MOVILES*/
 

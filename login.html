@@ -4,12 +4,13 @@
 <head>
 
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Iniciar Sesión | El Desvelo de la Luna | R.DeLeon</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/auth.css">
     <link rel="stylesheet" href="css/responsive.css">
 
 </head>
@@ -18,7 +19,11 @@
 
 <header>
 
-    <div class="logo">El Desvelo de la Luna</div>
+    <div class="logo">
+
+        RDeLeon
+
+    </div>
 
     <nav>
 
@@ -34,26 +39,32 @@
 
 </header>
 
-<section class="login-container">
+<section class="auth-container">
 
-    <div class="login-imagen">
+    <div class="auth-imagen">
 
-        <img src="img/logo.png"  alt="Poeta" width="250" height="250">
+        <img src="img/logo.png" alt="Poeta">
 
     </div>
 
-    <div class="login-card">
+    <div class="auth-card">
 
-        <h1>Bienvenido</h1>
+        <h1>Bienvenido de nuevo</h1>
 
-        <p>Inicia sesión para continuar.</p>
-		<br>
+        <p class="subtitulo">
+
+            Continúa este viaje entre versos.
+            <br>
+            La poesía también recuerda a quienes regresan.
+
+        </p>
+
         <form id="loginForm">
 
             <input
                 type="text"
                 id="usuario"
-                placeholder="Usuario o correo"
+                placeholder="Usuario o correo electrónico"
                 required>
 
             <input
@@ -62,27 +73,27 @@
                 placeholder="Contraseña"
                 required>
 
-            <br>
-			<br>
-			<label class="recordar">
+            <label class="recordar">
 
                 <input type="checkbox" id="recordarme">
 
                 Recordarme
 
             </label>
-			
+
             <button type="submit">
 
-                Iniciar sesión
+                Iniciar Sesión
 
             </button>
 
         </form>
 
-        <p class="registro-link">
+        <div id="mensajeLogin" class="mensaje"></div>
 
-            ¿No tienes una cuenta?
+        <p class="link">
+
+            ¿Aún no tienes una cuenta?
 
             <a href="registro.html">
 
@@ -91,8 +102,6 @@
             </a>
 
         </p>
-
-        <div id="mensajeLogin"></div>
 
     </div>
 
