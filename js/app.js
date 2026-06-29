@@ -302,3 +302,17 @@ cargarMenu();
 cargarBanner();
 
 cargarUltimas();
+
+/*=========================
+        MENU
+==========================*/
+
+const menu=document.getElementById("menu");
+
+const boton=document.getElementById("menuToggle");
+
+boton.addEventListener("click",()=>{
+
+    menu.classList.toggle("active");
+
+});
