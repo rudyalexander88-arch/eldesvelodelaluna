@@ -1,0 +1,262 @@
+/*======================================
+        TABLETS
+======================================*/
+
+@media (max-width: 992px){
+
+header{
+
+    padding:20px 5%;
+
+}
+
+section{
+
+    padding:70px 5%;
+
+}
+
+#hero{
+
+    grid-template-columns:1fr;
+    text-align:center;
+    gap:40px;
+
+}
+
+.hero-right{
+
+    order:-1;
+
+}
+
+.hero-right img{
+
+    width:70%;
+    max-width:380px;
+    margin:auto;
+
+}
+
+.hero-left h1{
+
+    font-size:48px;
+
+}
+
+#sobre{
+
+    grid-template-columns:1fr;
+    text-align:center;
+
+}
+
+.sobre-imagen{
+
+    display:flex;
+    justify-content:center;
+
+}
+
+.sobre-imagen img{
+
+    max-width:320px;
+
+}
+
+.slider{
+
+    flex-direction:column;
+
+}
+
+.slides{
+
+    flex-wrap:wrap;
+    justify-content:center;
+
+}
+
+}
+
+
+/*======================================
+        MOVILES
+======================================*/
+
+@media (max-width:768px){
+
+header{
+
+    padding:15px 20px;
+
+}
+
+.logo{
+
+    font-size:28px;
+
+}
+
+nav ul{
+
+    gap:18px;
+    font-size:14px;
+
+}
+
+section{
+
+    padding:60px 20px;
+
+}
+
+#hero{
+
+    min-height:auto;
+    padding-top:120px;
+
+}
+
+.hero-left h1{
+
+    font-size:40px;
+    line-height:1.2;
+
+}
+
+.hero-left p{
+
+    font-size:16px;
+    line-height:28px;
+
+}
+
+.hero-left button{
+
+    width:100%;
+    max-width:300px;
+
+}
+
+.hero-right img{
+
+    width:90%;
+    max-width:320px;
+
+}
+
+.intro-photo{
+
+    width:190px;
+
+}
+
+.intro-text h1{
+
+    font-size:58px;
+
+}
+
+.intro-text p{
+
+    font-size:16px;
+
+}
+
+.sobre-texto h2{
+
+    font-size:38px;
+
+}
+
+#banner h2{
+
+    font-size:36px;
+
+}
+
+.card{
+
+    width:100%;
+
+}
+
+.card img{
+
+    height:220px;
+
+}
+
+.cards{
+
+    grid-template-columns:1fr;
+
+}
+
+footer h2{
+
+    font-size:34px;
+
+}
+
+}
+
+
+/*======================================
+        TELEFONOS PEQUEÑOS
+======================================*/
+
+@media (max-width:480px){
+
+.logo{
+
+    font-size:24px;
+
+}
+
+.hero-left h1{
+
+    font-size:32px;
+
+}
+
+.hero-left p{
+
+    font-size:15px;
+
+}
+
+.sobre-texto h2{
+
+    font-size:30px;
+
+}
+
+#banner h2{
+
+    font-size:30px;
+
+}
+
+.intro-text h1{
+
+    font-size:48px;
+
+}
+
+.prev,
+.next{
+
+    width:42px;
+    height:42px;
+
+}
+
+.card-content h3{
+
+    font-size:28px;
+
+}
+
+}
