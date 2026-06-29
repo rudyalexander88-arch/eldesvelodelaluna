@@ -4,12 +4,13 @@
 <head>
 
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Registro | El Desvelo de la Luna</title>
+    <title>Registrarse | El Desvelo de la Luna | R.DeLeon</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/registro.css">
+    <link rel="stylesheet" href="css/auth.css">
     <link rel="stylesheet" href="css/responsive.css">
 
 </head>
@@ -18,7 +19,9 @@
 
 <header>
 
-    <div class="logo">El Desvelo de la Luna</div>
+   <div class="logo">El Desvelo de la Luna
+   
+   </div>
 
     <nav>
 
@@ -34,57 +37,68 @@
 
 </header>
 
+<section class="auth-container">
 
-<section class="registro-container">
+    <div class="auth-imagen">
 
-    <div class="registro-imagen">
-
-        <img src="img/poeta.png" alt="RDeLeon">
+        <img src="img/poeta_icon_.png" alt="Poeta">
 
     </div>
 
-    <div class="registro-card">
+    <div class="auth-card">
 
         <h1>Crear Cuenta</h1>
 
-        <p>Ven, la Luna te llama a ser parte de este desvelo entre versos.</p>
+        <p class="subtitulo">
+
+            Forma parte de este viaje entre versos.<br>
+            Cada lector también escribe una historia.
+
+        </p>
 
         <form id="registroForm">
 
             <input
                 type="text"
+                id="nombre"
                 placeholder="Nombre completo"
                 required>
 
             <input
                 type="email"
+                id="correo"
                 placeholder="Correo electrónico"
                 required>
 
             <input
                 type="text"
+                id="usuario"
                 placeholder="Nombre de usuario"
                 required>
 
             <input
                 type="password"
+                id="password"
                 placeholder="Contraseña"
                 required>
 
             <input
                 type="password"
+                id="confirmarPassword"
                 placeholder="Confirmar contraseña"
                 required>
 
             <button type="submit">
 
-                Registrarme
+                Crear Cuenta
 
             </button>
 
         </form>
 
-        <p class="login-link">
+        <div id="mensajeRegistro" class="mensaje"></div>
+
+        <p class="link">
 
             ¿Ya tienes una cuenta?
 
