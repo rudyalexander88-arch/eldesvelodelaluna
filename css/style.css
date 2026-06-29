@@ -594,3 +594,83 @@ footer small{
     color:#888;
 
 }
+/*===========================
+      MENU RESPONSIVE
+===========================*/
+
+.menu-toggle{
+
+    display:none;
+    font-size:32px;
+    cursor:pointer;
+    color:var(--gold);
+
+}
+
+@media(max-width:768px){
+
+.menu-toggle{
+
+    display:block;
+
+}
+
+nav{
+
+    position:fixed;
+
+    top:0;
+    right:-100%;
+
+    width:280px;
+    height:100vh;
+
+    background:#111;
+
+    transition:.4s;
+
+    padding-top:90px;
+
+    z-index:998;
+
+}
+
+nav.active{
+
+    right:0;
+
+}
+
+nav ul{
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:30px;
+
+}
+
+.dropdown .submenu{
+
+    position:relative;
+
+    display:block;
+
+    top:15px;
+
+    background:transparent;
+
+    box-shadow:none;
+
+}
+
+.dropdown .submenu a{
+
+    text-align:center;
+
+    color:#ccc;
+
+}
+
+}
