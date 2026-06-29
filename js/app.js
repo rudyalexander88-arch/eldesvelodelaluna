@@ -307,12 +307,30 @@ cargarUltimas();
         MENU
 ==========================*/
 
-const menu=document.getElementById("menu");
+document.addEventListener("DOMContentLoaded",()=>{
 
-const boton=document.getElementById("menuToggle");
+    const menu=document.getElementById("menu");
 
-boton.addEventListener("click",()=>{
+    const boton=document.getElementById("menuToggle");
 
-    menu.classList.toggle("active");
+    const overlay=document.getElementById("overlay");
+
+
+    boton.addEventListener("click",()=>{
+
+        menu.classList.toggle("active");
+
+        overlay.classList.toggle("active");
+
+    });
+
+
+    overlay.addEventListener("click",()=>{
+
+        menu.classList.remove("active");
+
+        overlay.classList.remove("active");
+
+    });
 
 });
